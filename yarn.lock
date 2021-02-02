@@ -2,6 +2,44 @@
 # yarn lockfile v1
 
 
+"@alicloud/console-os-browser-vm@^0.3.23":
+  version "0.3.23"
+  resolved "https://registry.npmjs.org/@alicloud/console-os-browser-vm/-/console-os-browser-vm-0.3.23.tgz#98f1f83411131b2f1db848bad03456fd8d292d77"
+  integrity sha512-YpTmGxUoJV2IdYmVlPUIpv2kWSJ6y4EeHk0AJXmFKzoPbZA0kyjym/CVbMxzCDvUK20IcS2/53a0a8bYf20fSg==
+
+"@alicloud/console-os-events@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.npmjs.org/@alicloud/console-os-events/-/console-os-events-0.3.3.tgz#8a04198a5701f23644963a18bf5bca513795e0a5"
+  integrity sha512-aAmwAqpvsyWBdEcXY65LPX+lBCWs39DK1hTRTe34KMftgrPqi3bvg0lRD3/IQcPv7bag8fNWsrbpZQJv/Lgbag==
+
+"@alicloud/console-os-kernal@^0.3.24":
+  version "0.3.24"
+  resolved "https://registry.npmjs.org/@alicloud/console-os-kernal/-/console-os-kernal-0.3.24.tgz#abe8c035233ee4c915d539fea3a3990330b385c1"
+  integrity sha512-TFRHc+zRjKHCudAqt4K17lusL3waypdnics/CKFcd3YvGm0YpL8inGQ9z80bJyT0MB+0nS3KbaS46Tv+UVkLlw==
+  dependencies:
+    "@alicloud/console-os-browser-vm" "^0.3.23"
+    "@alicloud/console-os-events" "^0.3.3"
+    "@alicloud/console-os-loader" "^0.3.24"
+    "@types/lru-cache" "^5.1.0"
+    axios "^0.19.0"
+    lru-cache "^4.1.5"
+    os-single-spa "^4.4.5"
+
+"@alicloud/console-os-loader@^0.3.24":
+  version "0.3.24"
+  resolved "https://registry.npmjs.org/@alicloud/console-os-loader/-/console-os-loader-0.3.24.tgz#c7239254979e8b933087dc077e008f37cb797936"
+  integrity sha512-Uvd5ZY5Mlg8T03EWSGplJ+aWENvehhfjMLleuogbyrdo6rTnM5vTPBQ6Lsl5i+6qD26d2ty0eIKQZX0g5iPHlw==
+  dependencies:
+    debug "^4.1.1"
+
+"@alicloud/console-os-vue-host-app@^1.0.0-next.13":
+  version "1.0.0-next.13"
+  resolved "https://registry.npmjs.org/@alicloud/console-os-vue-host-app/-/console-os-vue-host-app-1.0.0-next.13.tgz#93f19ae512b938c3b7ef0771cc91254846bbc488"
+  integrity sha512-GCi6xkj9v+N2DYgyTLWbLpiDoGIirL4bl9mxu5O2JXRXBVFa37GmzyMpNCN9WwPtEZGHIZoUUQiMlTQ8n0Dl7Q==
+  dependencies:
+    "@alicloud/console-os-kernal" "^0.3.24"
+    vue-custom-element "^3.2.14"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -743,6 +781,11 @@
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
 
+"@types/lru-cache@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.npmjs.org/@types/lru-cache/-/lru-cache-5.1.0.tgz#57f228f2b80c046b4a1bd5cac031f81f207f4f03"
+  integrity sha512-RaE0B+14ToE4l6UqdarKPnXwVDuigfFv+5j9Dze/Nqr23yyuqdNvzcZi3xB+3Agvi5R4EOgAksfv3lXX4vBt9w==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -1479,6 +1522,13 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
+
+axios@^0.19.0:
+  version "0.19.2"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+  dependencies:
+    follow-redirects "1.5.10"
 
 babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -2643,6 +2693,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.1.0, debug@^3.1.1, debug@^3.2.6:
   version "3.2.7"
   resolved "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -3712,6 +3769,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
 
 follow-redirects@^1.0.0:
   version "1.13.2"
@@ -5077,7 +5141,7 @@ lower-case@^1.1.1:
   resolved "https://registry.npmjs.org/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
 
-lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2:
+lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2, lru-cache@^4.1.5:
   version "4.1.5"
   resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-4.1.5.tgz#8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd"
   integrity sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
@@ -5742,6 +5806,11 @@ os-browserify@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
   integrity sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc=
+
+os-single-spa@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.npmjs.org/os-single-spa/-/os-single-spa-4.4.5.tgz#337a549ba9360dc93d5cc412c25daebfd553e675"
+  integrity sha512-GaGE33AsIQG0qmIzUZdXihbYEzjo6fNBxnYNMYiVXpTVcdAPfc0ey/4K9qhLn/0+xbEToodiCukOFmWBFBdTEA==
 
 os-tmpdir@~1.0.2:
   version "1.0.2"
@@ -8050,6 +8119,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+vue-custom-element@^3.2.14:
+  version "3.2.14"
+  resolved "https://registry.npmjs.org/vue-custom-element/-/vue-custom-element-3.2.14.tgz#fc4987ed4e1742bcb4e70a669d5060fc2c42bc25"
+  integrity sha512-IZYYsqyF1wC7hFm2g6gkf7lXp9hFau+po6dL0JTaMvSglsAgnowcbkpaOUl8exC7Bs6Ir9smJSXmKGFapml6TA==
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

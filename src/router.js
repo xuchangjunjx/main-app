@@ -5,6 +5,8 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 export default new Router({
+  mode: "history",
+  base: "/main-app/",
   routes: [
     {
       path: "/",
@@ -12,8 +14,8 @@ export default new Router({
       component: Home
     },
     {
-      path: "/about",
-      name: "about",
+      path: "/sub-app-entry",
+      name: "sub-app-name",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
