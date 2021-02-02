@@ -8,7 +8,7 @@
         disableFakeBody: true,
         disable: false
       }"
-      manifest="https://xuchangjunjx.github.io/sub-app1/my-sub-app1.manifest.json"
+      manifest="http://localhost:9999/sub-app1/my-sub-app1.manifest.json"
     />
   </div>
 </template>
